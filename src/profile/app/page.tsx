@@ -11,8 +11,6 @@ export default function Home() {
                 <a href="#home" className="hover:text-selected-text transition-all duration-300">ホーム</a>
                 <a href="#skills" className="hover:text-selected-text transition-all duration-300">スキル</a>
                 <a href="#socials" className="hover:text-selected-text transition-all duration-300">地域・社会貢献</a>
-                {/* <a href="#contact"
-                ><button className="px-6 py-2 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300">お問い合せ</button></a> */}
             </div>
             {/* 隠された時のbarを押したときの実装は未 */}
             <div className="md:hidden">
@@ -29,12 +27,7 @@ export default function Home() {
                     永井一輝<br />
                     ながやん
                 </h1>
-                {/* <button className="px-6 py-4 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300 mt-10">
-                    <i className="fa-solid fa-rocket mr-1"></i>
-                    <span>もっと見る</span>
-                </button> */}
             </div>
-            {/* <img src="/images/wearing_glasses.jpg" alt="image" className="md:absolute lg:top-2 lg:right-52 md:w-3/5 w-10/12 mt-12 md:mt-0 right-6 mx-auto -z-10 lg:w-3/6" /> */}
             <img src="/images/wearing_glasses.jpg" alt="image" className="rounded-md cursor-pointer lg:top-2 lg:right-52 md:w-3/5 w-10/12 mt-12 md:mt-0 right-6 lg:w-3/6" />
         </div>
     </div>
@@ -188,7 +181,7 @@ export default function Home() {
     </div>
 
     <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-2 gap-6">
-        <img src="/images/portfolio1.jpg"
+        <img src="/images/teckcaravan.JPG"
         alt=""
         className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
         <div>
@@ -254,10 +247,10 @@ export default function Home() {
                 そういう場を提供していくということを意識してスタッフをするようにしている。
             </p>
         </div>
-        <img src="/images/portfolio1.jpg"
+        <img src="/images/amatar_study.jpg"
         alt=""
         className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
-        <img src="/images/portfolio1.jpg"
+        <img src="/images/firefighter.png"
         alt=""
         className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
         <div>
@@ -267,82 +260,6 @@ export default function Home() {
             </p>
         </div>
     </div>
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
-                <img src="/images/portfolio2.jpg"
-                alt=""
-                className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
-                <img src="/images/portfolio3.jpg"
-                alt=""
-                className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
-                <img src="/images/portfolio4.jpg"
-                alt=""
-                className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
-                <img src="/images/portfolio5.jpg"
-                alt=""
-                className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
-                <img src="/images/portfolio6.jpg"
-                alt=""
-                className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
-            </div>
-
-   {/* <!-- お問い合わせ --> */}
-   <div id="contact"
-   className="container mt-52 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
-   >
-   <section className="w-full">
-    <h2 className="secondary-title">お問い合わせ</h2>
-    <p className="section-paragraph">私の経歴が気になる方はご一報ください。即時対応します。</p>
-    <div className="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16">
-        <div className="space-y-12">
-            <div>
-                <label className="text-white block mb-6 text-xl font-bold"
-                    >お名前</label
-                >
-                <input
-                    type="text" className="w-full border-inputBorder bg-input px-4 py-4"
-                />
-            </div>
-            <div>
-                <label className="text-white block mb-6 text-xl font-bold"
-                    >メールアドレス</label
-                >
-                <input
-                    type="email" className="w-full border-inputBorder bg-input px-4 py-4"
-                />
-            </div>
-            <div>
-                <label className="text-white block mb-6 text-xl font-bold"
-                    >メッセージ</label
-                >
-                <input
-                    type="text" className="w-full border-inputBorder bg-input px-4 py-4"
-                />
-            </div>
-            <button
-                className="px-8 py-3 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300"
-            >
-                送信する
-            </button>
-        </div>
-        <div>
-            <p className="text-secondary">000-1111-2222</p>
-            <a href="mailto:shincode@gmail.com">shincode@gmail.com</a>
-            {/* <!-- sns --> */}
-            <div className="mt-20 space-x-6">
-                <a href="#">
-                    <i className="fa-brands fa-twitter text-3xl text-blue-400"></i>
-                </a>
-                <a href="#">
-                    <i className="fa-brands fa-facebook text-3xl text-blue-600"></i>
-                </a>
-                <a href="#">
-                    <i className="fa-brands fa-instagram text-3xl text-pink-400"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    </section>
-</div>
     </main>
   )
 }
