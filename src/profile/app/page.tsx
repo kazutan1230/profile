@@ -2,7 +2,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center">
     {/* <!-- ナビゲーションバー --> */}
     <header className="py-4">
         <div className="container mx-auto flex justify-between items-center px-8 md:px-14 lg:px-14 w-full">
