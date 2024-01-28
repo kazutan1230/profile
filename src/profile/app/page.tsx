@@ -10,6 +10,7 @@ export default function Home() {
             <div className="text-3xl font-bold p-6">Activities</div>
             <div className="space-x-12 hidden md:flex items-center">
                 <a href="#home" className="hover:text-selected-text transition-all duration-300">ホーム</a>
+                <a href="#myself" className="hover:text-selected-text transition-all duration-300">自己紹介</a>
                 <a href="#skills" className="hover:text-selected-text transition-all duration-300">スキル</a>
                 <a href="#socials" className="hover:text-selected-text transition-all duration-300">地域・社会貢献</a>
             </div>
@@ -33,9 +34,108 @@ export default function Home() {
         </div>
     </div>
 
+    {/* <!-- 自己紹介セクション --> */}
+    <div id="myself"
+    className="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+        <section className="w-full">
+            <h2 className="secondary-title">自己紹介</h2>
+             <p className="section-paragraph font-zenKurenaido">こんにちは。まずは自己紹介をしていきます。</p>
+            <div className="my-16">
+                <div className="w-full border border-purple-300 p-16 lg:px-64 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-yellow-300 transition-all duration-300 cursor-pointer">
+                    {/* <!-- 基本プロフィール --> */}
+                    <div className="text-center flex flex-wrap justify-center lg:text-left lg:block md:text-left">
+                        <h3 className="text-3xl font-semibold">基本プロフィール</h3>
+                        <div className="flex flex-wrap w-full justify-center gap-3 lg:w-auto sm:justify-start mt-3 grid md:grid-cols-4 grid-cols-2">
+                            <div className="flex mb-6">
+                                <div className="badge">名前</div>  
+                            </div>
+                            <p className="text-secondary">
+                                永井一輝
+                                <br />
+                                ながいかずき
+                            </p>
+                            <div className="flex mb-6">
+                                <div className="badge">あだ名</div>  
+                            </div>
+                            <p className="text-secondary">
+                                ながやん
+                            </p>
+                            <div className="flex mb-6">
+                                <div className="badge">生年月日</div>  
+                            </div>
+                            <p className="text-secondary">
+                                平成4年12月30日
+                            </p>
+                            <div className="flex mb-6">
+                                <div className="badge">出身</div>  
+                            </div>
+                            <p className="text-secondary">
+                                京都府
+                            </p>
+                            <div className="flex mb-6">
+                                <div className="badge">特技</div>  
+                            </div>
+                            <p className="text-secondary">
+                                どこにいても
+                                東西南北が
+                                大体分かること。
+                                <br />
+                                口笛。
+                            </p>
+                            <div className="flex mb-6">
+                                <div className="badge">好きなもの</div>
+                            </div>
+                            <p className="text-secondary">
+                                旅行。
+                                <br />
+                                車の運転。
+                            </p>
+                            <div className="flex mb-6">
+                                <div className="badge">嫌いなもの</div>
+                            </div>
+                            <p className="text-secondary">
+                                ミックスベジタブル。
+                            </p>
+                            <div className="flex mb-6">
+                                <div className="badge">日々の楽しみ</div>
+                            </div>
+                            <p className="text-secondary">
+                                街作りシミュレーションゲーム(SimCity、Cities: Skylines、Transport Fever等)で渋滞を解消すること。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="my-16">
+                <div className="w-full border border-purple-300 p-16 lg:px-64 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-yellow-300 transition-all duration-300 cursor-pointer">
+                    {/* <!-- どんな人 --> */}
+                    <div className="text-center flex flex-wrap justify-center lg:text-left lg:block md:text-left">
+                        <h3 className="text-3xl font-semibold">どんな人</h3>
+                        <li>おもろいことが好き。</li>
+                        <li>適当やけど適度に真面目。</li>
+                        <li>フットワークが軽い。</li>
+                        <li>本当は常にボーっとして生きていたい。</li>
+                    </div>
+                </div>
+            </div>
+
+            <div className="my-16">
+                <div className="w-full border border-purple-300 p-16 lg:px-64 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-yellow-300 transition-all duration-300 cursor-pointer">
+                    {/* <!-- 最近のマイブーム --> */}
+                    <div className="text-center flex flex-wrap justify-center lg:text-left lg:block md:text-left">
+                        <h3 className="text-3xl font-semibold">最近のマイブーム</h3>
+                        <p>マルコメくんの恋路を応援して、ハラポンとくっつけようとハラスメントにならない程度にイジリ倒しつつ、たねむーが本当の気持ちに気付きつつあるという三角関係をニヤニヤしながら構築すること。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     {/* <!-- スキル面セクション --> */}
     <div id="skills"
-    className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    className="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
         <section className="w-full">
             <h2 className="secondary-title">スキル面</h2>
@@ -141,7 +241,7 @@ export default function Home() {
                             <div className="badge">インフラ</div>
                         </div>
                         <p className="text-secondary">
-                            各種開発ツールで開発を便利にしている。
+                            各種開発ツールで開発を便利にしています。
                         </p>
                     </div>
                 </div>
@@ -162,8 +262,8 @@ export default function Home() {
                             <div className="badge">電子工作教育</div>
                         </div>
                         <p className="text-secondary">
-                            子どもたちへのプログラミング教育を通じ、分かりやすい説明や表現を学ぶ。
-                            また、自身も電子工作することで難しい又は危険なポイントを理解した。
+                            子どもたちへのプログラミング教育を通じ、分かりやすい説明や表現を学んでいます。
+                            また、自身も電子工作することで難しい又は危険なポイントを理解ました。
                         </p>
                     </div>
                 </div>
@@ -173,11 +273,11 @@ export default function Home() {
 
     {/* <!-- 地域・社会貢献面 --> */}
     <div id="socials"
-    className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    className="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
         <section className="w-full">
             <h2 className="secondary-title">地域・社会貢献面</h2>
-             <p className="section-paragraph font-zenKurenaido">ラボに来て以降様々な経験をする。</p>
+             <p className="section-paragraph font-zenKurenaido">ラボに来て以降様々な経験をしました。</p>
         </section>
     </div>
 
@@ -188,64 +288,64 @@ export default function Home() {
         <div>
             <h3 className="text-3xl font-semibold">こどもテックキャラバン</h3>
             <p className="text-secondary font-zenKurenaido">
-                　現地参加前に公式LINE作成や公式サイト作成に携わる。
+                　現地参加前に公式LINE作成や公式サイト作成に携わりました。
                 参加申込をLINEトーク画面からして、
                 自動でスプレッドシートに吐き出すシステム開発を主に担当したが、
-                最初に使用するサービス選択の重要性を思い知らされた。
+                最初に使用するサービス選択の重要性を思い知りました。
             </p>
             <p className="text-secondary font-zenKurenaido">
-                　また、子どもたちに喜んでもらおうと電子工作やプログラミング問題の事前作成に取り組む。
+                　また、子どもたちに喜んでもらおうと電子工作やプログラミング問題の事前作成に取り組みました。
                 どのような環境で行われるかやどんな子が来るのかの想像が足りず、
-                あまり活躍の場が無かった。オンラインの時代でも、現場主義は健在と痛感する。
+                あまり活躍の場がありませんでした。オンラインの時代でも、現場主義は健在と痛感しその場に行くことの大事だと学びました。
             </p>
             <p className="text-secondary font-zenKurenaido">
-                　実際に教えてみると子どもたちは僕の想定より上手にできることがよく分かった。
-                確かに、できる子となかなかできない子はいるのだが、
-                その差を埋めてあげるというのが難しいということが分かった。
+                　実際に教えてみると子どもたちは僕の想定より上手にできることがよく分かりました。
+                確かに、できる子となかなかできない子はいますが、
+                その差を埋めてあげるというのが難しいということが分かってきました。
                 つまり、手を出し過ぎるとその子から考えることを奪ってしまうし、
-                うまくヒントを出せないと他の子との差が開いて嫌気が差してしまう。
-                教え加減のバランス感覚を今後も鍛えていく必要がある。
+                うまくヒントを出せないと他の子との差が開いてその子は嫌気が差してしまいます。
+                教え加減のバランス感覚を今後も鍛えていく必要があると考えています。
             </p>
             <p className="text-secondary font-zenKurenaido">
-                　体験の時間では親子揃って楽しむ姿が印象的であった。
-                その際に広島の現地サポーターのスタッフ達の地元の魅力を発信したいという強い気持ちに共鳴する。
-                常日頃から我が国の良さは日本各地の地方にあると考えてきたが、
-                やはり実際に現地で話をすると確信に変化した。
+                　体験の時間では親子揃って楽しむ姿が印象的でした。
+                その際に広島の現地サポーターのスタッフ達の地元の魅力を発信したいという強い気持ちに共鳴しました。
+                常日頃から我が国の良さは日本各地の地方にあると考えてきましたが、
+                やはり実際に現地で話をすると確信に変化しました。
             </p>
         </div>
         <div>
             <h3 className="text-3xl font-semibold">AMATAR STUDY</h3>
             <p className="text-secondary font-zenKurenaido">
-                　担当のセミナーにサポートスタッフとして毎回参加している。
-                まず、講義を担当される方の教え方の上手さを盗ませてもらっている。
-                関連する小噺であったり、時間内に終わらせる技術を僕自身学ばせてもらっている感覚である。
+                　担当のセミナーにサポートスタッフとして毎回参加させてもらっています。
+                まず、講義を担当される方の教え方の上手さを盗ませてもらっています。
+                関連する小噺であったり、時間内に終わらせる技術を僕自身学ばせてもらっている感覚でいます。
                 受講生の皆さんも仕事終わってから参加されたり、
                 アーカイブ動画を見て復習されたりしている方達が多いので、
-                その向上心は見習うべきである。
+                その向上心は見習うべきです。
             </p>
             <p className="text-secondary font-zenKurenaido">
-                　広島でも感じたことだが、人によって差があるのは同様で、
-                サラッと付いていける人もいれば、タイピングミスでもたつく人もいるという感じである。
+                　広島でも感じたことですが、人によって差があるのは同様で、
+                サラッと付いていける人もいれば、タイピングミスでもたつく人もいるという感じです。
                 順調に進んでいる時は適当に褒めているだけで良いので、
-                比較的楽ができるのであるが、
-                タイピングミスでエラーが出ている時は苦労する。
-                時間がかかってしまう事もあり、そうなると時間内に追い付いてもらうのは厳しい。
-                大丈夫そうな場合でも巡回して様子を見ておくのが良さそうだ。
+                比較的楽ができますが、
+                タイピングミスでエラーが出ている時は中々原因を見付けられず苦労します。
+                時間がかかってしまう事もあり、そうなると時間内に追い付いてもらうのは厳しいです。
+                大丈夫そうな場合でも巡回して様子を見ておくようにしています。
             </p>
             <p className="text-secondary font-zenKurenaido">
-                　対面であればすぐに質問できるのだが、オンラインでは難しい参加者もいるようだ。
-                セミナーを止めてしまうのを躊躇う心情もあるだろう。
+                　対面であればすぐに質問できるのだが、オンラインでは難しい参加者もいるようです。
+                セミナーを止めてしまうのを躊躇う心情もあるでしょうし、
                 こちらも画面越しでは悪戦苦闘している様子が見えないので、
-                積極的に質問を促す、ある程度の線でレベル別グループ分けが必要になると感じる。
+                積極的に質問を促す、ある程度の線でレベル別グループ分けをするといった対応が必要になると考えています。
             </p>
             <p className="text-secondary font-zenKurenaido">
                 　滝沢市に税金を納めている身でもあるし、
                 運営側だけでなく参加者としての気持ちも知ることが有益と判断したため、
-                AMATAR STUDYの別のセミナーに業務外で参加させてもらった。
+                AMATAR STUDYの別のセミナーに業務外で参加させてもらいました。
                 個々人の目標が何かは分からないが、
                 確かに熱いものを持った大人たちとグループワークをして、
                 高めあう環境があると実感し、
-                そういう場を提供していくということを意識してスタッフをするようにしている。
+                そういう場を提供していくということを意識してスタッフをするように心掛けるようになりました。
             </p>
         </div>
         <img src="/images/amatar_study.jpg"
