@@ -281,10 +281,10 @@ export default function Home() {
         </section>
     </div>
 
-    <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-2 gap-6">
+    <div className="grid md:grid-cols-2 gap-6">
         <img src="/images/teckcaravan.JPG"
         alt=""
-        className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
+        className="w-full h-auto object-cover rounded-md cursor-pointer" />
         <div>
             <h3 className="text-3xl font-semibold">こどもテックキャラバン</h3>
             <p className="text-secondary font-zenKurenaido">
@@ -350,10 +350,10 @@ export default function Home() {
         </div>
         <img src="/images/amatar_study.jpg"
         alt=""
-        className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
+        className="w-full h-auto object-cover rounded-md cursor-pointer" />
         <img src="/images/firefighter.png"
         alt=""
-        className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
+        className="w-full h-auto object-cover rounded-md cursor-pointer" />
         <div>
             <h3 className="text-3xl font-semibold">消防団活動</h3>
             <p className="text-secondary font-zenKurenaido">
